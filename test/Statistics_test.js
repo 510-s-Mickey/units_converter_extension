@@ -16,6 +16,7 @@ global.$ = global.window.jQuery;
 const popupPath = path.join(__dirname, '../code/popup/js/popup.js');
 const popupContent = fs.readFileSync(popupPath, 'utf8');
 eval(popupContent);
+// const popup = require('../code/popup/js/popup.js');
 
 describe('Statistics Calculations', () => {
     describe('calculateEntropy()', () => {
